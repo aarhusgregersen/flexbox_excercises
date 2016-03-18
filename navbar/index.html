@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Flexbox navbar</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+	
+	<header class="top">
+		<h1><a href="#">Flexbox Excercise</a></h1>
+	</header>
+
+	<nav class="flex-nav">
+		<a href="#" class="toggleNav">Menu</a>
+		<ul class="open">
+			<li><a href="#">Item 01</a></li>
+			<li><a href="#">Item 02</a></li>
+			<li><a href="#">Item 03</a></li>
+			<li><a href="#">Item 04</a></li>
+			<li><a href="#">Item 05</a></li>
+			<li><a href="#">Item 06</a></li>
+			<li class="social">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="social">
+				<a href="#"><i class="fa fa-github"></i></a>
+			</li>
+			<li class="social">
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li class="social">
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="hero">
+		<img src="" alt="">
+	</section>
+
+	<section class="details">
+		<p>Simple tutorial done to enhance my usage of flexbox and getting it under the skin.</p>
+		<p>I've presented a signup form on the page that doesn't do much except look nice.</p>
+	</section>
+
+	<section class="signup">
+		<form action="" class="signup">
+			<input type="text" placeholder="Your Name">
+			<input type="email" placeholder="Email adress">
+			<input type="submit" value="Sign me up">
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy; Martin Gregersen</p>
+	</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+	
+	$(function() {
+		$('.toggleNav').on('click',function() {
+			$('.flex-nav ul').toggleClass('open');
+		});
+	});
+</script>
+	
+</body>
+</html>
